@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+<div id="header" style="background-color:#0000FF;">
+<h2 style="margin-bottom:0;">Skittle's MPG to KPL Converter</h2></div>
+</title>
+<center>
+<div id="header" style="background-color:#ABCDEF;">
+<h2 style="margin-bottom:0;font-size:25px;color:black">Skittle's MPG to KPL Converter</h2></div> 
+</center>
+</head>
+<body bgcolor="#111111">
+<center>
+<form Name="thing">
+MPG<input type="text" name="mpg" size="12" value="">
+<input type="button" value="Convert!" style="font-family:aharoni;color:purple;font-size:20px" onclick="mpgtokpl();">
+KPL<input type="text" ID="result" name="fattymcfatfat" size="12" value="">
+</form>
+
+<BR>
+
+<form Name="mcstuff">
+KPL<input type="text" name="kpl" size="12" value="">
+<input type="button" value="Convert!" style="font-family:aharoni;color:gold;font-size:20px" onclick="kpltompg();">
+MPG<input type="text" ID="result2" name="spinningwheels" size="12" value="">
+</form>
+<BR>
+<div style="background-color:#00000F;height:40px;width:100%">
+<BR>
+<BR>
+<img src="http://www.tabootshirts.com/wp-content/uploads/2012/03/skittles.jpg">
+</center>
+<BR>
+<form name=calc>
+02.<table>
+03.<tr><td colspan="3" width="75%"><input name="wtcalc" type="text"></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value=''" value="C" name="C" title="C"></td></tr>
+04.<tr><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='1'" value="1" name="1" title="1" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='2'" value="2" name="2" title="2" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='3'" value="3" name="3" title="3" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='+'" value="+" name="+" title="+" ></td></tr>
+05.<tr><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='4'" value="4" name="4" title="4" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='5'" value="5" name="5" title="5" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='6'" value="6" name="6" title="6" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='-'" value="-" name="-" title="-" ></td></tr>
+06.<tr><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='7'" value="7" name="7" title="7" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='8'" value="8" name="8" title="8" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='9'" value="9" name="9" title="9" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='*'" value="*" name="*" title="*" ></td></tr>
+07.<tr><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='.'" value="." name="." title="." ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='0'" value="0" name="0" title="0" ></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value=eval(calc.wtcalc.value);" value="="></td><td width="25%"><input type="button" onClick="document.calc.wtcalc.value+='/'" value="/" name="/" title="/" ></td></tr>
+08.</table>
+09.</form>
+<BR>
+
+
+<input name="wtcalc" type="text">
+<script language="JavaScript">
+function mpgtokpl() 
+	{
+		var mpg = document.thing.mpg.value; 
+		var mpgconstant = 0.425144;
+		var kplresult;
+			
+		kplresult = (parseFloat(mpg) * mpgconstant).toFixed(4);
+		
+		document.getElementById('result').value = kplresult;
+	}
+
+function kpltompg()
+	{
+		var kpl = document.mcstuff.kpl.value;
+		var kplconstant = 2.35215;
+		var mpgresult;
+		
+		mpgresult = (parseFloat(kpl) * kplconstant).toFixed(4);
+		
+		document.getElementById('result2').value = mpgresult;
+	}
+</script>
+
+</body>
+
+<script type="text/javascript">
+// Popup window code
+function newPopup(http://www.quackit.com/html/codes/html_popup_window_code.cfm) {
+	popupWindow = window.open(
+		http://www.quackit.com/html/codes/html_popup_window_code.cfm,'popUpWindow','height=700,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+</script> 
+<a href="JavaScript:newPopup('http://www.quackit.com/html/html_help.cfm');">Open a popup window</a>
+//Working window openner
+<a href="http://www.quackit.com/html/html_help.cfm" target="_blank">HTML Help</a>
+</html>
